@@ -1,0 +1,160 @@
+    # Adding the needed buttons
+    back_image = ImageTk.PhotoImage(Image.open("Back_Logo.png").resize((39, 32)))
+    back_button = gui.button_design(header_frame, 1690, 0, 210, 58, "#065494", "white", " Back",("Century Gothic", 21, 'bold'))
+    back_button.config(image=back_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=back)
+    save_button = gui.button_design(main_frame, 52, 1976, 185,42, "#88DDDF", "#0C385E", "SAVE", ("Century Gothic", 17, 'bold')) # Create the save button
+    save_button.config(command=saveData)
+    cancel_button = gui.button_design(main_frame, 245, 1976, 185, 42, "#5FB2DF", "#0C385E", "CANCEL", ("Century Gothic", 17, 'bold')) # Create the cancel button
+    cancel_button.config(command=cancelData)
+
+    window.state('zoomed') # Functionality to keep the page on auto-full screen
+    window.mainloop() # Start the GUI event loop
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Adding the needed buttons
+log_in_button = gui.button_design(window, 197, 650, 150, 34, "#0C385E", "white", "LOG IN", ("Century Gothic", 12, 'bold'))
+log_in_button.config(command=logIn)
+cancel_button = gui.button_design(window, 367, 650, 150, 34, "#1E6CAB", "white", "CANCEL", ("Century Gothic", 12, 'bold'))
+cancel_button.config(command=cancelData)
+show_password_button = gui.button_design(window, 499, 588, 40, 25, "white", "white", "", ("Century Gothic", 10,))
+show_password_button.config(image=eye_closed_image, command=toggle_password, borderwidth=0, relief=tk.FLAT, activebackground="white")
+
+window.state('zoomed') # Functionality to keep the page on auto-full screen
+window.mainloop() # Start the GUI event loop
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    # Adding the needed buttons
+    log_out_image = ImageTk.PhotoImage(Image.open("Log_Out_Logo.png").resize((39, 32)))
+    log_out_button = gui.button_design(header_frame, 1690, 0, 210, 58, "#065494", "white", " Log Out", ("Century Gothic", 21, 'bold'))
+    log_out_button.config(image=log_out_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=log_out)
+    profile_image = ImageTk.PhotoImage(Image.open("Profile_Logo.png").resize((56, 61)))
+    profile_button = gui.button_design(main_frame, 26, 88, 495, 104, "#065494", "white", " PROFILE",("Century Gothic", 30, 'bold'))
+    profile_button.config(image=profile_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=switch_to_profile_page)
+    payroll_image = ImageTk.PhotoImage(Image.open("Payroll_Logo.png").resize((56, 61)))
+    payroll_button = gui.button_design(main_frame, 600, 88, 495, 104, "#065494", "white", " PAYROLL",("Century Gothic", 30, 'bold'))
+    payroll_button.config(image=payroll_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494",  command=switch_to_payroll_page)
+    account_image = ImageTk.PhotoImage(Image.open("Account_Logo.png").resize((56, 61)))
+    account_button = gui.button_design(main_frame, 1174, 88, 495, 104, "#065494", "white", " ACCOUNT",("Century Gothic", 30, 'bold'))
+    account_button.config(image=account_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=switch_to_account_page)
+    add_profile_image = ImageTk.PhotoImage(Image.open("Add_Profile_Logo.png").resize((56, 61)))
+    add_profile_button = gui.button_design(main_frame, 600, 519, 495, 104, "#065494", "white", " ADD PROFILE",("Century Gothic", 30, 'bold'))
+    add_profile_button.config(image=add_profile_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=switch_to_add_profile_portal)
+
+    window.state('zoomed')  # Functionality to keep the page on auto-full screen
+    window.mainloop()  # Start the GUI event loop
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    # Adding the needed buttons
+    log_out_image = ImageTk.PhotoImage(Image.open("Log_Out_Logo.png").resize((39, 32)))
+    log_out_button = gui.button_design(header_frame, 1690, 0, 210, 58, "#065494", "white", " Log Out", ("Century Gothic", 21, 'bold'))
+    log_out_button.config(image=log_out_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=log_out)
+    profile_image = ImageTk.PhotoImage(Image.open("Profile_Logo.png").resize((56, 61)))
+    profile_button = gui.button_design(main_frame, 26, 88, 495, 104, "#065494", "white", " PROFILE",("Century Gothic", 30, 'bold'))
+    profile_button.config(image=profile_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=switch_to_profile_page)
+    payroll_image = ImageTk.PhotoImage(Image.open("Payroll_Logo.png").resize((56, 61)))
+    payroll_button = gui.button_design(main_frame, 600, 88, 495, 104, "#065494", "white", " PAYROLL",("Century Gothic", 30, 'bold'))
+    payroll_button.config(image=payroll_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494",  command=switch_to_payroll_page)
+    account_image = ImageTk.PhotoImage(Image.open("Account_Logo.png").resize((56, 61)))
+    account_button = gui.button_design(main_frame, 1174, 88, 495, 104, "#065494", "white", " ACCOUNT",("Century Gothic", 30, 'bold'))
+    account_button.config(image=account_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=switch_to_account_page)
+
+    window.state('zoomed')  # Functionality to keep the page on auto-full screen
+    window.mainloop()  # Start the GUI event loop
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    # Adding the needed buttons
+    profile_image = ImageTk.PhotoImage(Image.open("Profile_Logo.png").resize((46, 51)))
+    profile_button = gui.button_design(frame, 2, 311, 259, 64, "#2676AF", "white", " PROFILE", ("Century Gothic", 14, 'bold'))
+    profile_button.config(image=profile_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#2676AF",  command=switch_to_profile_page)
+    profile_indicate = tk.Label(frame, text="", bg="white")
+    profile_indicate.place(x=255, y=311, width=5, height=64)
+    payroll_image = ImageTk.PhotoImage(Image.open("Payroll_Logo.png").resize((51, 51)))
+    payroll_button = gui.button_design(frame, 2, 380, 259, 64, "#2D7DB4", "white", "  PAYROLL", ("Century Gothic", 14, 'bold'))
+    payroll_button.config(image=payroll_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#2D7DB4", command=switch_to_payroll_page)
+    account_image = ImageTk.PhotoImage(Image.open("Account_Logo.png").resize((53, 51)))
+    account_button = gui.button_design(frame, 2, 449, 259, 64, "#3484BB", "white", "  ACCOUNT", ("Century Gothic", 14, 'bold'))
+    account_button.config(image=account_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#3484BB", command=switch_to_account_page)
+    logo_image = ImageTk.PhotoImage(Image.open("UNIS_Logo.png").resize((199, 92)))
+    logo_button = gui.button_design(frame, 2, 822, 259, 125, "#5AACDB", "white", "", ("Century Gothic", 12, 'bold'))
+    logo_button.config(image=logo_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5AACDB", command=switch_to_employee_or_admin_portal)
+    UNIS_corporation_label = gui.label_design(frame, 61, 922, "UNIS Corporation", "#5AACDB", "white", ("Century Gothic", 11, 'bold'))
+    log_out_image = ImageTk.PhotoImage(Image.open("Log_Out_Logo.png").resize((39, 32)))
+    log_out_button = gui.button_design(frame, 2, 1001, 259, 79, "#5EB0DE", "white", "  Log Out", ("Century Gothic", 12, 'bold'))
+    log_out_button.config(image=log_out_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5EB0DE", command=log_out)
+    Update_button = gui.button_design(frame, 866, 426, 94, 36, "#5AACDB", "white", "Update", ("Century Gothic", 13))
+    Update_button.config(command=updateData)
+
+    window.state('zoomed')  # Functionality to keep the page on auto-full screen
+    window.mainloop()  # Start the GUI event loop
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    # Buttons
+    profile_image = ImageTk.PhotoImage(Image.open("Profile_Logo.png").resize((46, 51)))
+    profile_button = my_gui_design.button_design(frame, 2, 311, 259, 64, "#2676AF", "white", " PROFILE", ("Century Gothic", 14, 'bold'))
+    profile_button.config(image=profile_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#2676AF",  command=switch_to_profile_page)
+    payroll_image = ImageTk.PhotoImage(Image.open("Payroll_Logo.png").resize((51, 51)))
+    payroll_button = my_gui_design.button_design(frame, 2, 380, 259, 64, "#2D7DB4", "white", "  PAYROLL", ("Century Gothic", 14, 'bold'))
+    payroll_button.config(image=payroll_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#2D7DB4", command=switch_to_payroll_page)
+    payroll_indicate = tk.Label(frame, text="", bg="white")
+    payroll_indicate.place(x=255, y=380, width=5, height=64)
+    account_image = ImageTk.PhotoImage(Image.open("Account_Logo.png").resize((53, 51)))
+    account_button = my_gui_design.button_design(frame, 2, 449, 259, 64, "#3484BB", "white", "  ACCOUNT", ("Century Gothic", 14, 'bold'))
+    account_button.config(image=account_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#3484BB", command=switch_to_account_page)
+    logo_image = ImageTk.PhotoImage(Image.open("UNIS_Logo.png").resize((199, 92)))
+    logo_button = my_gui_design.button_design(frame, 2, 822, 259, 125, "#5AACDB", "white", "", ("Century Gothic", 12, 'bold'))
+    logo_button.config(image=logo_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5AACDB", command=switch_to_employee_or_admin_portal)
+    UNIS_corporation_label = my_gui_design.label_design(frame, 61, 922, "UNIS Corporation", "#5AACDB", "white", ("Century Gothic", 11, 'bold'))
+    log_out_image = ImageTk.PhotoImage(Image.open("Log_Out_Logo.png").resize((39, 32)))
+    log_out_button = my_gui_design.button_design(frame, 2, 1001, 259, 79, "#5EB0DE", "white", "  Log Out", ("Century Gothic", 12, 'bold'))
+    log_out_button.config(image=log_out_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5EB0DE", command=log_out)
+    search_button = my_gui_design.button_design(frame, 699, 277, 106, 36, "#0C385E", "white", "Search", ('Century Gothic', 13))
+    search_button.config(command=searchEmployee)
+    gross_income_button = my_gui_design.button_design(frame, 1132, 1001, 150, 36, "#1E6CAB", "white", "GROSS INCOME", ('Century Gothic', 13))
+    gross_income_button.config(command=grossIncome)
+    net_income_button = my_gui_design.button_design(frame, 1297, 1001, 130, 36, "#1E6CAB", "white", "NET INCOME", ('Century Gothic', 13))
+    net_income_button.config(command=netIncome)
+    save_button = my_gui_design.button_design(frame, 1442, 1001, 106, 36, "#5CABD7", "white", "SAVE", ('Century Gothic', 13))
+    save_button.config(command=saveData)
+    update_button = my_gui_design.button_design(frame, 1563, 1001, 106, 36, "#5CABD7", "white", "UPDATE", ('Century Gothic', 13))
+    update_button.config(command=updateData)
+    new_button = my_gui_design.button_design(frame, 1684, 1001, 106, 36, "#0C385E", "white", "NEW", ('Century Gothic', 13))
+    new_button.config(command=newData)
+
+    window.state('zoomed')  # Functionality to keep the page on auto-full screen
+    window.mainloop()  # Start the GUI event loop
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    # Adding the needed buttons
+    profile_image = ImageTk.PhotoImage(Image.open("Profile_Logo.png").resize((46, 51)))
+    profile_button = gui.button_design(frame, 2, 311, 259, 64, "#2676AF", "white", " PROFILE", ("Century Gothic", 14, 'bold'))
+    profile_button.config(image=profile_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#2676AF", command=switch_to_profile_page)
+    payroll_image = ImageTk.PhotoImage(Image.open("Payroll_Logo.png").resize((51, 51)))
+    payroll_button = gui.button_design(frame, 2, 380, 259, 64, "#2D7DB4", "white", "  PAYROLL", ("Century Gothic", 14, 'bold'))
+    payroll_button.config(image=payroll_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#2D7DB4", command=switch_to_payroll_page)
+    account_image = ImageTk.PhotoImage(Image.open("Account_Logo.png").resize((53, 51)))
+    account_button = gui.button_design(frame, 2, 449, 259, 64, "#3484BB", "white", "  ACCOUNT", ("Century Gothic", 14, 'bold'))
+    account_button.config(image=account_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#3484BB", command=switch_to_account_page)
+    account_indicate = tk.Label(frame, text="", bg="white")
+    account_indicate.place(x=255, y=449, width=5, height=64)
+    logo_image = ImageTk.PhotoImage(Image.open("UNIS_Logo.png").resize((199, 92)))
+    logo_button = gui.button_design(frame, 2, 822, 259, 125, "#5AACDB", "white", "", ("Century Gothic", 12, 'bold'))
+    logo_button.config(image=logo_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5AACDB", command=switch_to_employee_or_admin_portal)
+    UNIS_corporation_label = gui.label_design(frame, 61, 922, "UNIS Corporation", "#5AACDB", "white", ("Century Gothic", 11, 'bold'))
+    log_out_image = ImageTk.PhotoImage(Image.open("Log_Out_Logo.png").resize((39, 32)))
+    log_out_button = gui.button_design(frame, 2, 1001, 259, 79, "#5EB0DE", "white", "  Log Out",("Century Gothic", 12, 'bold'))
+    log_out_button.config(image=log_out_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5EB0DE",  command=log_out)
+    update_button = gui.button_design(frame, 1486, 857, 118, 40, "#5CABD7", "white", "UPDATE", ("Century Gothic", 13))
+    update_button.config(command=updateData)
+    delete_button = gui.button_design(frame, 1621, 857, 118, 40, "#0C385E", "white", "DELETE", ("Century Gothic", 13))
+    delete_button.config(command=deleteData)
+    cancel_button = gui.button_design(frame, 1756, 857, 118, 40, "#1E6CAB", "white", "CANCEL", ("Century Gothic", 13))
+    cancel_button.config(command=cancelData)
+
+    window.state('zoomed')  # Functionality to keep the page on auto-full screen
+    window.mainloop()  # Start the GUI event loop
